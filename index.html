@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas</title>
+    <!-- Incluir estilos CSS si es necesario -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Conversor de Monedas</h1>
+
+    <div id="converter">
+        <form id="converterForm">
+            <input type="number" id="amount" placeholder="Cantidad a convertir" required>
+            <select id="fromCurrency" required>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <!-- Agregar más opciones según las monedas que desees incluir -->
+            </select>
+            <select id="toCurrency" required>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <!-- Agregar más opciones según las monedas que desees incluir -->
+            </select>
+            <button type="button" id="convertButton">Convertir</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrsasign/10.2.0/jsrsasign-all-min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
